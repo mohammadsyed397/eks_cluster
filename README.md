@@ -38,12 +38,15 @@ versions.tf file will help to download latest versions of modules in which we wi
    `terraform apply`
 6. To integrate eks cluster with kubectl :
    `aws eks --region <your-region> update-kubeconfig --name <your-cluster-name>`
+To view the resources and perform actions on nodes we need to create access entries based on your requirements
+ 
 
-7. Verify the EKS cluster:  
+8. Verify the EKS cluster:  
    `kubectl get nodes`
 
-8. Deploy applications to the EKS cluster:  
+9. Deploy applications to the EKS cluster:  
    `kubectl apply -f deployment.yaml`
+
 
 ## Cleanup
 
